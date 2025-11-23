@@ -1,0 +1,1 @@
+export class Assets { constructor(){ this.images = new Map(); } loadImage(name, src){ return new Promise((res,rej)=>{ const img = new Image(); img.onload=()=>{ this.images.set(name,img); res(img); }; img.onerror=rej; img.src=src; }); } getImage(name){ return this.images.get(name); } async loadAll(list){ await Promise.all(list.map(item=>this.loadImage(item.name,item.src))); } }
