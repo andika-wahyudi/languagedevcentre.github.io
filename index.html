@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pixel RPG Island</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="dialog" class="hidden">
+      <div id="dialog-text"></div>
+      <button id="dialog-next">Next</button>
+    </div>
+    <div id="quest-log"></div>
+    <div id="mini-game-overlay" class="hidden">
+      <canvas id="mini-game-canvas" width="320" height="180"></canvas>
+      <button id="mini-game-exit">Exit Mini-Game</button>
+    </div>
+  </div>
+  <canvas id="game" width="640" height="360"></canvas>
+  <script src="engine/util.js"></script>
+  <script src="engine/input.js"></script>
+  <script src="engine/assets.js"></script>
+  <script src="engine/map.js"></script>
+  <script src="engine/entity.js"></script>
+  <script src="engine/npc.js"></script>
+  <script src="engine/quest.js"></script>
+  <script src="engine/minigames.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
